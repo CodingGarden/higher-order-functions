@@ -10,8 +10,8 @@ The `map()` method on the Array prototype creates a new array with the results o
 ## Map written with a forEach
 
 ```js
-let numbers = [1, 2, 3];
-let doubledNumbers = []; // 1. Initialize accumulator variable
+const numbers = [1, 2, 3];
+const doubledNumbers = []; // 1. Initialize accumulator variable
 
 // 2. Iterate over an array
 numbers.forEach((number) => {
@@ -24,9 +24,9 @@ console.log(doubledNumbers);
 The same code written with a map instead of a forEach
 
 ```js
-let numbers = [1, 2, 3];
+const numbers = [1, 2, 3];
 
-let doubledNumbers = numbers.map((number) => {
+const doubledNumbers = numbers.map((number) => {
   return number * 2;
 });
 

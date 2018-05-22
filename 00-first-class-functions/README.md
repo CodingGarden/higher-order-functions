@@ -23,7 +23,7 @@ const sayHello = () => {
    return 'Hello, ';
 };
 
-greeting = (helloFn, name) => {
+const greeting = (helloFn, name) => {
   console.log(helloFn() + name);
 };
 

@@ -1,5 +1,11 @@
 const numbers = [13, 42, 1337];
 // Create a new array with the numbers doubled
+const doubledNumbers = numbers.map(number => {
+  return number * 2;
+});
+
+console.log(doubledNumbers);
+
 
 const days = [
   'Sunday',
@@ -11,6 +17,10 @@ const days = [
   'Saturday'
 ];
 // create a new array with the first 3 letters of each day
+const lazyDays = days.map(day => {
+  return day.substring(0, 3);
+});
+console.log(lazyDays);
 
 const people = [{
   first_name: 'CJ',
@@ -26,6 +36,11 @@ const people = [{
   last_name: 'Crockford'
 }];
 // Create a new array with the string full name of each person
+const fullNames = people.map(peep => {
+  return peep.first_name + ' ' + peep.last_name;
+});
+console.log(fullNames);
+
 
 const animals = [{
   name: 'cat',
@@ -41,11 +56,18 @@ const animals = [{
   size: 'big'
 }];
 // Create a new array with just the names of the animals
+const animalNames = animals.map(animal => animal.name);
+console.log(animalNames);
 
 const theNumbers = [4, 8, 15, 16, 23, 42];
-// create a new array of objects with the properties value and index
+// { value: 4, index: 0 }, { value: 8, index: 1 }..... 
 
-const starter = [2, 5, 10];
-// Create a new array with each value multiplied by the next value
-// The last value should be multiplied by the first value
-// e.g. [2*5, 5*10, 10*2] == [10, 50, 20]
+// create a new array of objects with the properties value and index
+const specificNumbers = theNumbers.map((value, index) => ({ value, index }));
+console.log(specificNumbers);
+
+
+// const starter = [2, 5, 10];
+// // Create a new array with each value multiplied by the next value
+// // The last value should be multiplied by the first value
+// // e.g. [2*5, 5*10, 10*2] == [10, 50, 20]

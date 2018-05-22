@@ -5,10 +5,14 @@ let numbers_1 = [1, 2, 3, 4, 5];
 let sum = 0; // 1. Initialize accumulator variable
 
 // 2. Iterate over an array
-for (let i = 0; i < numbers_1.length; i++) {
-  const number = numbers_1[i];
-  sum += number; // 3. Update the accumulator variable
-}
+// for (let i = 0; i < numbers_1.length; i++) {
+//   const number = numbers_1[i];
+//   sum += number; // 3. Update the accumulator variable
+// }
+
+numbers_1.forEach((number) => {
+  sum += number;
+});
 
 console.log(sum);
 
@@ -17,11 +21,15 @@ console.log(sum);
 let things = ['shoe', 'table', 'book', 'computer', 'phone'];
 let copiedThings = []; // 1. Initialize accumulator variable
 
-// 2. Iterate over an array
-for (let i = 0; i < things.length; i++) {
-  const thing = things[i];
-  copiedThings.push(thing); // 3. Update the accumulator variable
-}
+// // 2. Iterate over an array
+// for (let i = 0; i < things.length; i++) {
+//   const thing = things[i];
+//   copiedThings.push(thing); // 3. Update the accumulator variable
+// }
+
+things.forEach(thing => {
+  copiedThings.push(thing);
+});
 
 console.log(copiedThings);
 
@@ -31,10 +39,14 @@ let numbers_2 = [1, 2, 3, 4, 5];
 let doubledNumbers = []; // 1. Initialize accumulator variable
 
 // 2. Iterate over an array
-for (let i = 0; i < numbers_2.length; i++) {
-  const number = numbers_2[i];
-  doubledNumbers.push(number * 2); // 3. Update the accumulator variable
-}
+// for (let i = 0; i < numbers_2.length; i++) {
+//   const number = numbers_2[i];
+//   doubledNumbers.push(number * 2); // 3. Update the accumulator variable
+// }
+
+numbers_2.forEach(number => {
+  doubledNumbers.push(number * 2);
+});
 
 console.log(doubledNumbers);
 
@@ -44,11 +56,17 @@ let all_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let evenNumbers = []; // 1. Initialize accumulator variable
 
 // 2. Iterate over an array
-for (let i = 0; i < all_numbers.length; i++) {
-  const number = all_numbers[i];
-  if (number % 2 === 0) {
-    evenNumbers.push(number); // 3. Update the accumulator variable
+// for (let i = 0; i < all_numbers.length; i++) {
+//   const number = all_numbers[i];
+//   if (number % 2 === 0) {
+//     evenNumbers.push(number); // 3. Update the accumulator variable
+//   }
+// }
+
+all_numbers.forEach(number => {
+  if (number % 2 ===0) {
+    evenNumbers.push(number);
   }
-}
+});
 
 console.log(evenNumbers);

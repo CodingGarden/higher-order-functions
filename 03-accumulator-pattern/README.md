@@ -34,5 +34,5 @@ for (let i = 0; i < numbers_2.length; i++) {
   doubledNumbers.push(number * 2); // 3. Update the accumulator variable
 }
 
-console.log(doubledNumbers);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
 ```

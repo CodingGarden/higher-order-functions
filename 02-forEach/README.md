@@ -17,6 +17,8 @@ for (let i = 0; i < numbers.length; i++) {
 numbers.forEach((number) => {
   console.log(number);
 });
+
+numbers.forEach((number) => console.log(number)); // can also write it this way
 ```
 
 The callback function passed into the `forEach` will get called with 3 parameters:
