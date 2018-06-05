@@ -1,0 +1,15 @@
+{
+  "name": "01-indentify",
+  "version": "1.0.0",
+  "description": "Higher order functions are functions that take in a function as an argument, or return a function as a result.",
+  "main": "exercise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "w3cj <cj@null.computer>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
+}

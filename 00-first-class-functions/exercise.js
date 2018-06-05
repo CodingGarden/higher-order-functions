@@ -46,3 +46,14 @@ const fiveAdder = makeAdder(5);
 
 console.log(fiveAdder(3));
 console.log(fiveAdder(5));
+
+const a = 5;
+
+
+
+
+const hello = () => {
+  console.log('hello world!');
+};
+
+hello();

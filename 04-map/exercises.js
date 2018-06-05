@@ -71,3 +71,15 @@ console.log(specificNumbers);
 // // Create a new array with each value multiplied by the next value
 // // The last value should be multiplied by the first value
 // // e.g. [2*5, 5*10, 10*2] == [10, 50, 20]
+
+const foods = ['🐔', '🌽'];
+
+const cookedFoods = foods.map(food => {
+  if (food === '🐔') {
+    return '🍗';
+  } else if (food === '🌽') {
+    return '🍿';
+  }
+});
+
+console.log(cookedFoods);

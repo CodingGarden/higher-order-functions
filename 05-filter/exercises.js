@@ -1,5 +1,10 @@
 const numbers = [1, 3, 4, 5, 6, 7, 8, 9, 10];
 // Create a new array with only the even numbers
+const evenNumbers = numbers.filter(number => {
+  return number % 2 === 0;
+});
+
+console.log(evenNumbers);
 
 const days = [
   'Sunday',
@@ -11,6 +16,13 @@ const days = [
   'Saturday'
 ];
 // create a new array with only the days that start with the letter T
+const tonyDays = days.filter(day => {
+  // return day[0] === 'T';
+  return day.charAt(0) === 'T';
+});
+
+console.log(tonyDays);
+
 
 const people = [{
   first_name: 'CJ',
@@ -26,6 +38,11 @@ const people = [{
   last_name: 'Crockford'
 }];
 // Create a new array with only the people who's first name is less than 4 characters long.
+const shortNames = people.filter(peep => {
+  return peep.first_name.length <= 4;
+});
+
+console.log(shortNames);
 
 const animals = [{
   name: 'cat',
@@ -41,6 +58,19 @@ const animals = [{
   size: 'big'
 }];
 // Create a new array with only the animals of size small
+const smallAnimals = animals.filter(animal => {
+  return animal.size === 'small';
+});
+
+console.log(smallAnimals);
 
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 // create a new array with only the words with a length longer than 6
+
+const longWords = words.filter(word => {
+  return word.length > 6;
+});
+
+// const longWords = words.filter(word => word.length > 6);
+
+console.log(longWords);

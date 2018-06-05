@@ -34,6 +34,14 @@ let evenNumbers = numbers.filter((number) => {
   return number % 2 === 0;
 });
 
+let evenNumbers = numbers.filter((number) => {
+  if (number % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
 console.log(evenNumbers);
 ```
 

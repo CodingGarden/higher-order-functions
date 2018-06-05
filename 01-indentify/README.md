@@ -10,6 +10,10 @@ Examples:
 document.body.addEventListener('click', () => {
   console.log('The body was clicked!');
 });
+
+document.body.addEventListener('click', function() {
+  console.log('The body was clicked!');
+});
 ```
 
 Can also be written as:

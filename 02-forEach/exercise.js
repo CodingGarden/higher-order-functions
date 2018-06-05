@@ -64,3 +64,9 @@ products.forEach(product => {
 });
 
 // products.forEach(product => console.log(product.name));
+
+const names = ['Mertcan', 'Ali', 'William', 'Prof Elements', 'quellhorst', 'Robin'];
+
+names.forEach(name => {
+  console.log(name);
+});
