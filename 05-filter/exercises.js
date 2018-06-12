@@ -74,3 +74,14 @@ const longWords = words.filter(word => {
 // const longWords = words.filter(word => word.length > 6);
 
 console.log(longWords);
+
+
+const genres = ['jazz', 'metal-core', 'punk', 'ska-core', 'vaporwave', 'country-core'];
+
+// const isLit = genres.filter(genre => genre.includes('core'));
+const isLit = genres.filter(genre => {
+  // return genre.indexOf('core') >= 0;
+  return genre.indexOf('core') != -1;
+});
+
+console.log(isLit);

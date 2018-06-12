@@ -83,3 +83,21 @@ const cookedFoods = foods.map(food => {
 });
 
 console.log(cookedFoods);
+
+
+const coolNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const numbersMultipliedBy5 = coolNumbers.map(number => number * 5);
+
+console.log(numbersMultipliedBy5);
+
+const genres = ['classical', 'alternative', 'crab', 'noodle', 'jazz'];
+
+// const coreGenres = genres.map(genre => genre + '-core');
+const coreGenres = genres.map(genre => `${genre}-core`);
+console.log(coreGenres);
+
+const betterNumbers = [5, 13, 42];
+const betterNumbersSquared = betterNumbers.map(number => number ** 5);
+// const betterNumbersSquared = betterNumbers.map(number => Math.pow(number, 5));
+console.log(betterNumbersSquared);
